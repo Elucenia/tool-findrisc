@@ -1,0 +1,118 @@
+[
+  {
+    "label": "Jovem, IMC normal, ativo: 0 ponto",
+    "input": {
+      "idade": "0",
+      "imc": "0",
+      "cintura": "0",
+      "ativ": "0",
+      "veg": "0",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low",
+      "verdict": "Risco baixo"
+    },
+    "originalInput": {
+      "idade": "0",
+      "imc": "0",
+      "cintura": "0",
+      "ativ": "0",
+      "veg": "0",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+    "input": {
+      "idade": "3",
+      "imc": "1",
+      "cintura": "3",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "0"
+    },
+    "expected": {
+      "score": 10,
+      "level": "low",
+      "verdict": "levemente elevado"
+    },
+    "originalInput": {
+      "idade": "3",
+      "imc": "1",
+      "cintura": "3",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+    "input": {
+      "idade": "2",
+      "imc": "1",
+      "cintura": "3",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "3"
+    },
+    "expected": {
+      "score": 12,
+      "level": "mid",
+      "verdict": "moderado"
+    },
+    "originalInput": {
+      "idade": "2",
+      "imc": "1",
+      "cintura": "3",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "0",
+      "glic": "0",
+      "familia": "3"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Todos os fatores de maior risco: 26 pontos",
+    "input": {
+      "idade": "4",
+      "imc": "3",
+      "cintura": "4",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "2",
+      "glic": "5",
+      "familia": "5"
+    },
+    "expected": {
+      "score": 26,
+      "level": "high",
+      "verdict": "muito alto"
+    },
+    "originalInput": {
+      "idade": "4",
+      "imc": "3",
+      "cintura": "4",
+      "ativ": "2",
+      "veg": "1",
+      "antihip": "2",
+      "glic": "5",
+      "familia": "5"
+    },
+    "expandedZeroOptions": []
+  }
+]

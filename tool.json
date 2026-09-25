@@ -1,0 +1,371 @@
+{
+  "tool": {
+    "id": "findrisc",
+    "title": "FINDRISC",
+    "short": "Risco de diabetes tipo 2 em 10 anos",
+    "desc": "Calcule o FINDRISC (Finnish Diabetes Risk Score): risco de desenvolver diabetes tipo 2 em 10 anos, com oito perguntas simples e sem exames de sangue.",
+    "lead": "Questionário de rastreamento que estima o risco de diabetes tipo 2 em 10 anos em adultos, sem exames laboratoriais.",
+    "spec": [
+      "endocrinologia-e-metabologia",
+      "medicina-de-familia-e-comunidade",
+      "clinica-medica",
+      "nutrologia"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Idade",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 45 anos",
+            "2": "45 a 54",
+            "3": "55 a 64",
+            "4": "&gt; 64"
+          }
+        }
+      ],
+      [
+        "imc",
+        "IMC",
+        "radio",
+        {
+          "opts": {
+            "0": "&lt; 25 kg/m²",
+            "1": "25 a 30",
+            "3": "&gt; 30"
+          }
+        }
+      ],
+      [
+        "cintura",
+        "Circunferência abdominal",
+        "sel",
+        {
+          "opts": {
+            "0": "Homem &lt; 94 cm · mulher &lt; 80 cm",
+            "3": "Homem 94 a 102 cm · mulher 80 a 88 cm",
+            "4": "Homem &gt; 102 cm · mulher &gt; 88 cm"
+          }
+        }
+      ],
+      [
+        "ativ",
+        "Faz ao menos 30 minutos de atividade física por dia (trabalho ou lazer)?",
+        "radio",
+        {
+          "opts": {
+            "0": "Sim",
+            "2": "Não"
+          }
+        }
+      ],
+      [
+        "veg",
+        "Com que frequência come verduras, legumes ou frutas?",
+        "radio",
+        {
+          "opts": {
+            "0": "Todos os dias",
+            "1": "Não todos os dias"
+          }
+        }
+      ],
+      [
+        "antihip",
+        "Já usou regularmente remédio para pressão alta?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "2": "Sim"
+          }
+        }
+      ],
+      [
+        "glic",
+        "Já teve glicemia alta (em exame, doença ou gestação)?",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "5": "Sim"
+          }
+        }
+      ],
+      [
+        "familia",
+        "Familiares com diabetes (tipo 1 ou 2)",
+        "sel",
+        {
+          "opts": {
+            "0": "Não",
+            "3": "Sim: avós, tios ou primos de primeiro grau",
+            "5": "Sim: pais, irmãos ou filhos"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "FINDRISC",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "low",
+          "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos"
+        ],
+        [
+          7,
+          "low",
+          "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
+          "Orientar alimentação e atividade física."
+        ],
+        [
+          12,
+          "mid",
+          "Risco moderado: cerca de 1 em 6 em 10 anos",
+          "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida."
+        ],
+        [
+          15,
+          "high",
+          "Risco alto: cerca de 1 em 3 em 10 anos",
+          "Dosar glicemia de jejum/HbA1c (ou TOTG) e intervir no estilo de vida."
+        ],
+        [
+          21,
+          "high",
+          "Risco muito alto: cerca de 1 em 2 em 10 anos",
+          "Investigar diabetes não diagnosticado."
+        ]
+      ]
+    },
+    "formula": "<p>Soma de pontos: idade (0 a 4), IMC (0 a 3), cintura (0 a 4), atividade física (0 ou 2), frutas e verduras (0 ou 1), anti-hipertensivo (0 ou 2), glicemia alta prévia (0 ou 5) e história familiar (0, 3 ou 5). Total de 0 a 26 pontos.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Risco de diabetes tipo 2 em 10 anos"
+      ],
+      [
+        "&lt; 7",
+        "Baixo (≈ 1%)"
+      ],
+      [
+        "7 a 11",
+        "Levemente elevado (≈ 4%)"
+      ],
+      [
+        "12 a 14",
+        "Moderado (≈ 17%)"
+      ],
+      [
+        "15 a 20",
+        "Alto (≈ 33%)"
+      ],
+      [
+        "&gt; 20",
+        "Muito alto (≈ 50%)"
+      ]
+    ],
+    "tips": [
+      "É um instrumento de rastreamento, não de diagnóstico: com escore alto, confirme com glicemia de jejum, HbA1c ou teste oral de tolerância à glicose.",
+      "Desenvolvido e validado na população finlandesa; na população brasileira, o desempenho é semelhante, mas os pontos de corte ideais podem variar.",
+      "O item de história familiar foi incluído na versão revisada do questionário (usada na prática); o artigo de 2003 ainda não o tinha.",
+      "Útil em campanhas, farmácias e atenção primária para selecionar quem deve fazer exames laboratoriais."
+    ],
+    "sources": [
+      [
+        "Lindström J, Tuomilehto J. The Diabetes Risk Score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003.",
+        "https://doi.org/10.2337/diacare.26.3.725"
+      ],
+      [
+        "Saaristo T et al. Cross-sectional evaluation of the Finnish Diabetes Risk Score: a tool to identify undetected type 2 diabetes, abnormal glucose tolerance and metabolic syndrome. Diab Vasc Dis Res, 2005.",
+        "https://doi.org/10.3132/dvdr.2005.011"
+      ]
+    ],
+    "cases": [
+      [
+        "Jovem, IMC normal, ativo: 0 ponto",
+        {
+          "idade": "0",
+          "imc": "0",
+          "cintura": "0",
+          "ativ": "0",
+          "veg": "0",
+          "antihip": "0",
+          "glic": "0",
+          "familia": "0"
+        },
+        {
+          "score": 0,
+          "level": "low",
+          "verdict": "Risco baixo"
+        }
+      ],
+      [
+        "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        {
+          "idade": "3",
+          "imc": "1",
+          "cintura": "3",
+          "ativ": "2",
+          "veg": "1",
+          "antihip": "0",
+          "glic": "0",
+          "familia": "0"
+        },
+        {
+          "score": 10,
+          "level": "low",
+          "verdict": "levemente elevado"
+        }
+      ],
+      [
+        "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        {
+          "idade": "2",
+          "imc": "1",
+          "cintura": "3",
+          "ativ": "2",
+          "veg": "1",
+          "antihip": "0",
+          "glic": "0",
+          "familia": "3"
+        },
+        {
+          "score": 12,
+          "level": "mid",
+          "verdict": "moderado"
+        }
+      ],
+      [
+        "Todos os fatores de maior risco: 26 pontos",
+        {
+          "idade": "4",
+          "imc": "3",
+          "cintura": "4",
+          "ativ": "2",
+          "veg": "1",
+          "antihip": "2",
+          "glic": "5",
+          "familia": "5"
+        },
+        {
+          "score": 26,
+          "level": "high",
+          "verdict": "muito alto"
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "FINDRISC",
+      "fields": [
+        [
+          "idade",
+          "radio",
+          0
+        ],
+        [
+          "imc",
+          "radio",
+          0
+        ],
+        [
+          "cintura",
+          "sel",
+          0
+        ],
+        [
+          "ativ",
+          "radio",
+          0
+        ],
+        [
+          "veg",
+          "radio",
+          0
+        ],
+        [
+          "antihip",
+          "radio",
+          0
+        ],
+        [
+          "glic",
+          "radio",
+          0
+        ],
+        [
+          "familia",
+          "sel",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos"
+        ],
+        [
+          7,
+          "low",
+          "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
+          "Orientar alimentação e atividade física."
+        ],
+        [
+          12,
+          "mid",
+          "Risco moderado: cerca de 1 em 6 em 10 anos",
+          "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida."
+        ],
+        [
+          15,
+          "high",
+          "Risco alto: cerca de 1 em 3 em 10 anos",
+          "Dosar glicemia de jejum/HbA1c (ou TOTG) e intervir no estilo de vida."
+        ],
+        [
+          21,
+          "high",
+          "Risco muito alto: cerca de 1 em 2 em 10 anos",
+          "Investigar diabetes não diagnosticado."
+        ]
+      ]
+    },
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
