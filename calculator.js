@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-findrisc · Elucenia · https://github.com/Elucenia/tool-findrisc
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"findrisc","title":"FINDRISC","fields":[["idade","Idade","radio",{"opts":{"0":"&lt; 45 anos","2":"45 a 54","3":"55 a 64","4":"&gt; 64"}}],["imc","IMC","radio",{"opts":{"0":"&lt; 25 kg/m²","1":"25 a 30","3":"&gt; 30"}}],["cintura","Circunferência abdominal","sel",{"opts":{"0":"Homem &lt; 94 cm · mulher &lt; 80 cm","3":"Homem 94 a 102 cm · mulher 80 a 88 cm","4":"Homem &gt; 102 cm · mulher &gt; 88 cm"}}],["ativ","Faz ao menos 30 minutos de atividade física por dia (trabalho ou lazer)?","radio",{"opts":{"0":"Sim","2":"Não"}}],["veg","Com que frequência come verduras, legumes ou frutas?","radio",{"opts":{"0":"Todos os dias","1":"Não todos os dias"}}],["antihip","Já usou regularmente remédio para pressão alta?","radio",{"opts":{"0":"Não","2":"Sim"}}],["glic","Já teve glicemia alta (em exame, doença ou gestação)?","radio",{"opts":{"0":"Não","5":"Sim"}}],["familia","Familiares com diabetes (tipo 1 ou 2)","sel",{"opts":{"0":"Não","3":"Sim: avós, tios ou primos de primeiro grau","5":"Sim: pais, irmãos ou filhos"}}]],"config":{"unit":"","label":"FINDRISC","fields":[["idade","radio",0],["imc","radio",0],["cintura","sel",0],["ativ","radio",0],["veg","radio",0],["antihip","radio",0],["glic","radio",0],["familia","sel",0]],"bands":[[0,"low","Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos"],[7,"low","Risco levemente elevado: cerca de 1 em 25 em 10 anos","Orientar alimentação e atividade física."],[12,"mid","Risco moderado: cerca de 1 em 6 em 10 anos","Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida."],[15,"high","Risco alto: cerca de 1 em 3 em 10 anos","Dosar glicemia de jejum/HbA1c (ou TOTG) e intervir no estilo de vida."],[21,"high","Risco muito alto: cerca de 1 em 2 em 10 anos","Investigar diabetes não diagnosticado."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
