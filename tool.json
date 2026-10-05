@@ -5,13 +5,13 @@
     "short": "Risco de diabetes tipo 2 em 10 anos",
     "desc": "Calcule o FINDRISC (Finnish Diabetes Risk Score): risco de desenvolver diabetes tipo 2 em 10 anos, com oito perguntas simples e sem exames de sangue.",
     "lead": "Questionário de rastreamento que estima o risco de diabetes tipo 2 em 10 anos em adultos, sem exames laboratoriais.",
+    "kind": "Escore",
     "spec": [
       "endocrinologia-e-metabologia",
       "medicina-de-familia-e-comunidade",
       "clinica-medica",
       "nutrologia"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
@@ -107,74 +107,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "FINDRISC",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos"
-        ],
-        [
-          7,
-          "low",
-          "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
-          "Orientar alimentação e atividade física."
-        ],
-        [
-          12,
-          "mid",
-          "Risco moderado: cerca de 1 em 6 em 10 anos",
-          "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida."
-        ],
-        [
-          15,
-          "high",
-          "Risco alto: cerca de 1 em 3 em 10 anos",
-          "Dosar glicemia de jejum/HbA1c (ou TOTG) e intervir no estilo de vida."
-        ],
-        [
-          21,
-          "high",
-          "Risco muito alto: cerca de 1 em 2 em 10 anos",
-          "Investigar diabetes não diagnosticado."
-        ]
-      ]
-    },
     "formula": "<p>Soma de pontos: idade (0 a 4), IMC (0 a 3), cintura (0 a 4), atividade física (0 ou 2), frutas e verduras (0 ou 1), anti-hipertensivo (0 ou 2), glicemia alta prévia (0 ou 5) e história familiar (0, 3 ou 5). Total de 0 a 26 pontos.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Risco de diabetes tipo 2 em 10 anos"
-      ],
-      [
-        "&lt; 7",
-        "Baixo (≈ 1%)"
-      ],
-      [
-        "7 a 11",
-        "Levemente elevado (≈ 4%)"
-      ],
-      [
-        "12 a 14",
-        "Moderado (≈ 17%)"
-      ],
-      [
-        "15 a 20",
-        "Alto (≈ 33%)"
-      ],
-      [
-        "&gt; 20",
-        "Muito alto (≈ 50%)"
-      ]
-    ],
-    "tips": [
-      "É um instrumento de rastreamento, não de diagnóstico: com escore alto, confirme com glicemia de jejum, HbA1c ou teste oral de tolerância à glicose.",
-      "Desenvolvido e validado na população finlandesa; na população brasileira, o desempenho é semelhante, mas os pontos de corte ideais podem variar.",
-      "O item de história familiar foi incluído na versão revisada do questionário (usada na prática); o artigo de 2003 ainda não o tinha.",
-      "Útil em campanhas, farmácias e atenção primária para selecionar quem deve fazer exames laboratoriais."
-    ],
     "sources": [
       [
         "Lindström J, Tuomilehto J. The Diabetes Risk Score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003.",
@@ -259,85 +192,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "FINDRISC",
-      "fields": [
-        [
-          "idade",
-          "radio",
-          0
-        ],
-        [
-          "imc",
-          "radio",
-          0
-        ],
-        [
-          "cintura",
-          "sel",
-          0
-        ],
-        [
-          "ativ",
-          "radio",
-          0
-        ],
-        [
-          "veg",
-          "radio",
-          0
-        ],
-        [
-          "antihip",
-          "radio",
-          0
-        ],
-        [
-          "glic",
-          "radio",
-          0
-        ],
-        [
-          "familia",
-          "sel",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos"
-        ],
-        [
-          7,
-          "low",
-          "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
-          "Orientar alimentação e atividade física."
-        ],
-        [
-          12,
-          "mid",
-          "Risco moderado: cerca de 1 em 6 em 10 anos",
-          "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida."
-        ],
-        [
-          15,
-          "high",
-          "Risco alto: cerca de 1 em 3 em 10 anos",
-          "Dosar glicemia de jejum/HbA1c (ou TOTG) e intervir no estilo de vida."
-        ],
-        [
-          21,
-          "high",
-          "Risco muito alto: cerca de 1 em 2 em 10 anos",
-          "Investigar diabetes não diagnosticado."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -346,17 +200,288 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:47:03.432Z",
+      "total": 1728,
+      "passed": 1728,
+      "sourceRowCount": 1728,
+      "uniqueApiInputCount": 1728,
+      "scope": "Eight assigned option weights and sum0–26, source scorebands. Author-hosted appendix reproduction, not whole2003initial20pointmodel/clinicalprobability calibration.",
+      "caseStorage": {
+        "file": "independent-source-cases.json",
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "sha256": "2840f629db47d6298bed02495c3d4c00520d7e728e85c57d7c4da6354843bcec",
+        "total": 1728,
+        "uniqueApiInputCount": 1728,
+        "bankRowCount": 1728
+      },
+      "sourceExpectation": {
+        "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+        "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+      },
+      "originalEvidence": {
+        "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+        "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+      },
+      "sourceRead": {
+        "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+        "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+      },
+      "independentPeer": {
+        "status": "completed",
+        "kind": "independent-technical-packaging-and-replay",
+        "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+        "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+        "checks": 568121,
+        "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+        "secondBlindPrimarySourceDerivation": false,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed"
+      },
+      "numericPolicy": {
+        "acceptedProjection": "Strict independently frozen accepted integer/count/class projection; no float tolerance"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "FINDRISC 8 itens/Saaristo 2005:história familiarincluída, total 0–26; sem versão original abreviada 20 pontos",
+    "implementationVersion": "findrisc@native-2026-10-03+f42d4f43ff3e",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12610029/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Soma de pontos: idade (0 a 4), IMC (0 a 3), cintura (0 a 4), atividade física (0 ou 2), frutas e verduras (0 ou 1), anti-hipertensivo (0 ou 2), glicemia alta prévia (0 ou 5) e história familiar (0, 3 ou 5). Total de 0 a 26 pontos.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Idade",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 45 anos",
+              "2": "45 a 54",
+              "3": "55 a 64",
+              "4": "&gt; 64"
+            }
+          },
+          {
+            "key": "imc",
+            "label": "IMC",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "&lt; 25 kg/m²",
+              "1": "25 a 30",
+              "3": "&gt; 30"
+            }
+          },
+          {
+            "key": "cintura",
+            "label": "Circunferência abdominal",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Homem &lt; 94 cm · mulher &lt; 80 cm",
+              "3": "Homem 94 a 102 cm · mulher 80 a 88 cm",
+              "4": "Homem &gt; 102 cm · mulher &gt; 88 cm"
+            }
+          },
+          {
+            "key": "ativ",
+            "label": "Faz ao menos 30 minutos de atividade física por dia (trabalho ou lazer)?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Sim",
+              "2": "Não"
+            }
+          },
+          {
+            "key": "veg",
+            "label": "Com que frequência come verduras, legumes ou frutas?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Todos os dias",
+              "1": "Não todos os dias"
+            }
+          },
+          {
+            "key": "antihip",
+            "label": "Já usou regularmente remédio para pressão alta?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "2": "Sim"
+            }
+          },
+          {
+            "key": "glic",
+            "label": "Já teve glicemia alta (em exame, doença ou gestação)?",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "5": "Sim"
+            }
+          },
+          {
+            "key": "familia",
+            "label": "Familiares com diabetes (tipo 1 ou 2)",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "3": "Sim: avós, tios ou primos de primeiro grau",
+              "5": "Sim: pais, irmãos ou filhos"
+            }
+          }
+        ],
+        "hash": "923ddba1fd6e88a277d493ccff457901f51930a3657f14cd1223c2cb57e73878"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lindström J, Tuomilehto J. The Diabetes Risk Score: a practical tool to predict type 2 diabetes risk. Diabetes Care, 2003.",
+          "url": "https://doi.org/10.2337/diacare.26.3.725",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "The diabetes risk score: a practical tool to predict type 2 diabetes risk.",
+            "year": "2003",
+            "firstPublicationDate": "2003-03-01",
+            "doi": "10.2337/diacare.26.3.725",
+            "pmid": "12610029",
+            "journal": "Diabetes care",
+            "authors": "Lindström J, Tuomilehto J."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/12610029/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "362cd350cd841abcf222fc359e095d09d4005273d47a09e5882e5788a97f1339",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Saaristo T et al. Cross-sectional evaluation of the Finnish Diabetes Risk Score: a tool to identify undetected type 2 diabetes, abnormal glucose tolerance and metabolic syndrome. Diab Vasc Dis Res, 2005.",
+          "url": "https://doi.org/10.3132/dvdr.2005.011",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Cross-sectional evaluation of the Finnish Diabetes Risk Score: a tool to identify undetected type 2 diabetes, abnormal glucose tolerance and metabolic syndrome.",
+            "year": "2005",
+            "firstPublicationDate": "2005-05-01",
+            "doi": "10.3132/dvdr.2005.011",
+            "pmid": "16305061",
+            "journal": "Diabetes & vascular disease research",
+            "authors": "Saaristo T, Peltonen M, Lindström J, Saarikoski L, Sundvall J, Eriksson JG, Tuomilehto J."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/16305061/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d327fc2b9d1299fcc61a02cdeecdd6bcb68b99e11536c87663a5cd9bcd9a378a",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:47:03.432Z",
+        "total": 1728,
+        "passed": 1728,
+        "sourceRowCount": 1728,
+        "uniqueApiInputCount": 1728,
+        "scope": "Eight assigned option weights and sum0–26, source scorebands. Author-hosted appendix reproduction, not whole2003initial20pointmodel/clinicalprobability calibration.",
+        "caseStorage": {
+          "file": "independent-source-cases.json",
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "sha256": "2840f629db47d6298bed02495c3d4c00520d7e728e85c57d7c4da6354843bcec",
+          "total": 1728,
+          "uniqueApiInputCount": 1728,
+          "bankRowCount": 1728
+        },
+        "sourceExpectation": {
+          "file": "reports/review-20261003/source33-accepted-scope-expectations.json",
+          "sha256": "c51a745f432eef23771c7e52dea4c8b82f501ce54d3bfe640e449e04883bc907"
+        },
+        "originalEvidence": {
+          "file": "reports/review-20261003/six-primary-own-source-check-final33.json",
+          "sha256": "f41286e6919665d7480d19067e0fa325292e1753677e419375b69a9739843521"
+        },
+        "sourceRead": {
+          "file": "reports/review-20261003/six-primary-own-observations-final33.json",
+          "sha256": "f4047a76d52e04932e39b336d9a395c949640cb519103160ebe5241fd4ad67a1"
+        },
+        "independentPeer": {
+          "status": "completed",
+          "kind": "independent-technical-packaging-and-replay",
+          "file": "reports/review-20261003/source33-bank-packaging-root-peer-r2.json",
+          "sha256": "5201eb9c2655a20545a1e836e61bb26045b368c4dfc6f690a9dde3b63bdc398e",
+          "checks": 568121,
+          "scope": "Root independent technical packaging/projection peer, against the source author pre-engine expectations. Not a second blind primary-source derivation or clinical/professional-language/rights approval. Exact source33 exclusions retained; no tolerance relaxation.",
+          "secondBlindPrimarySourceDerivation": false,
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed"
+        },
+        "numericPolicy": {
+          "acceptedProjection": "Strict independently frozen accepted integer/count/class projection; no float tolerance"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f"
+    },
+    "limits": "O FINDRISC original de 2003 foi derivado em adultos de 35–64 anos sem tratamento antidiabético no início, para diabetes tipo 2 que passou a receber tratamento farmacológico em dez anos. A versão ampliada local de oito itens/0–26 deve ser conferida na fonte posterior correspondente; não é a soma de sete variáveis/0–20 do original. O escore não confirma diabetes nem permite extrapolação automática à pediatria.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.969Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "A versão ampliada Saaristo 2005 precisa de leitura própria para confirmar itens e cortes. Faixa da coorte não é automaticamente critério universal de aplicação."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/findrisc/calculator.js",
+    "bytes": 5785,
+    "sha256": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "d5410b0516821cae51584489c443093f11cbd2a33fc9a75dcb3dff260a801636",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 3,
+      "sha256": "53e77c5ff9dc3586c1414151ab97ee498f7e3899d73cdca976db745f5c4d3d17",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 3,
+      "sha256": "53e77c5ff9dc3586c1414151ab97ee498f7e3899d73cdca976db745f5c4d3d17",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
