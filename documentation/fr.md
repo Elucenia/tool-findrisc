@@ -114,3 +114,33 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Risque faible : environ 1 personne sur 100 développera un diabète en 10 ans
+
+
+### 2
+
+Risque légèrement élevé : environ 1 personne sur 25 en 10 ans
+
+Conseiller une alimentation et une activité physique.
+
+
+### 3
+
+Risque modéré : environ 1 personne sur 6 en 10 ans
+
+Envisager une glycémie à jeun ou une HbA1c et une modification intensive du mode de vie.
+
+
+### 4
+
+Risque très élevé : environ 1 personne sur 2 en 10 ans
+
+Rechercher un diabète non diagnostiqué.
+

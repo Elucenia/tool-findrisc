@@ -114,3 +114,33 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Riesgo bajo: alrededor de 1 de cada 100 desarrollará diabetes en 10 años
+
+
+### 2
+
+Riesgo ligeramente elevado: alrededor de 1 de cada 25 en 10 años
+
+Orientar sobre alimentación y actividad física.
+
+
+### 3
+
+Riesgo moderado: alrededor de 1 de cada 6 en 10 años
+
+Considerar glucemia en ayunas o HbA1c y un cambio intensivo del estilo de vida.
+
+
+### 4
+
+Riesgo muy alto: alrededor de 1 de cada 2 en 10 años
+
+Investigar diabetes no diagnosticada.
+

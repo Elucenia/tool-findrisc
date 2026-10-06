@@ -114,3 +114,33 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk: about 1 in 100 will develop diabetes in 10 years
+
+
+### 2
+
+Slightly elevated risk: about 1 in 25 in 10 years
+
+Advise diet and physical activity.
+
+
+### 3
+
+Moderate risk: about 1 in 6 in 10 years
+
+Consider fasting glucose or HbA1c and intensive lifestyle change.
+
+
+### 4
+
+Very high risk: about 1 in 2 in 10 years
+
+Investigate undiagnosed diabetes.
+

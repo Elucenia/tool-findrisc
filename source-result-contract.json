@@ -1,0 +1,242 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "findrisc",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "ec6fed0d488b0388ff771d803faf588c4be8e85c",
+    "oldEngineSha256": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f",
+    "currentEngineSha256": "5b0438d212625404e4000bd7663d3adafbb5f8f47dd5085889f0290d37ba2ec3"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Jovem, IMC normal, ativo: 0 ponto",
+      "input": {
+        "idade": "0",
+        "imc": "0",
+        "cintura": "0",
+        "ativ": "0",
+        "veg": "0",
+        "antihip": "0",
+        "glic": "0",
+        "familia": "0"
+      },
+      "publicOutput": {
+        "id": "findrisc",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low",
+        "verdict": "Risco baixo"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "level": "low",
+        "verdict": "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos",
+        "note": "",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+      "input": {
+        "idade": "3",
+        "imc": "1",
+        "cintura": "3",
+        "ativ": "2",
+        "veg": "1",
+        "antihip": "0",
+        "glic": "0",
+        "familia": "0"
+      },
+      "publicOutput": {
+        "id": "findrisc",
+        "main": [
+          "10",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "raw": {
+          "score": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 10,
+        "level": "low",
+        "verdict": "levemente elevado"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "level": "low",
+        "verdict": "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
+        "note": "Orientar alimentação e atividade física.",
+        "raw": {
+          "score": 10
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+      "input": {
+        "idade": "2",
+        "imc": "1",
+        "cintura": "3",
+        "ativ": "2",
+        "veg": "1",
+        "antihip": "0",
+        "glic": "0",
+        "familia": "3"
+      },
+      "publicOutput": {
+        "id": "findrisc",
+        "main": [
+          "12",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "raw": {
+          "score": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 12,
+        "level": "mid",
+        "verdict": "moderado"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "12",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "level": "mid",
+        "verdict": "Risco moderado: cerca de 1 em 6 em 10 anos",
+        "note": "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida.",
+        "raw": {
+          "score": 12
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Todos os fatores de maior risco: 26 pontos",
+      "input": {
+        "idade": "4",
+        "imc": "3",
+        "cintura": "4",
+        "ativ": "2",
+        "veg": "1",
+        "antihip": "2",
+        "glic": "5",
+        "familia": "5"
+      },
+      "publicOutput": {
+        "id": "findrisc",
+        "main": [
+          "26",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "raw": {
+          "score": 26
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 26,
+        "level": "high",
+        "verdict": "muito alto"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "26",
+          "pontos"
+        ],
+        "label": "FINDRISC",
+        "level": "high",
+        "verdict": "Risco muito alto: cerca de 1 em 2 em 10 anos",
+        "note": "Investigar diabetes não diagnosticado.",
+        "raw": {
+          "score": 26
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

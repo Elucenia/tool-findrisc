@@ -249,7 +249,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "FINDRISC 8 itens/Saaristo 2005:história familiarincluída, total 0–26; sem versão original abreviada 20 pontos",
-    "implementationVersion": "findrisc@native-2026-10-03+f42d4f43ff3e",
+    "implementationVersion": "findrisc@native-2026-10-05+5b0438d21262",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/12610029/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -446,7 +446,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f"
+      "implementationHash": "5b0438d212625404e4000bd7663d3adafbb5f8f47dd5085889f0290d37ba2ec3",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "findrisc@native-2026-10-03+f42d4f43ff3e",
+          "previousImplementationHash": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f",
+          "implementationHash": "5b0438d212625404e4000bd7663d3adafbb5f8f47dd5085889f0290d37ba2ec3",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "923ddba1fd6e88a277d493ccff457901f51930a3657f14cd1223c2cb57e73878",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O FINDRISC original de 2003 foi derivado em adultos de 35–64 anos sem tratamento antidiabético no início, para diabetes tipo 2 que passou a receber tratamento farmacológico em dez anos. A versão ampliada local de oito itens/0–26 deve ser conferida na fonte posterior correspondente; não é a soma de sete variáveis/0–20 do original. O escore não confirma diabetes nem permite extrapolação automática à pediatria.",
     "sourceLimitEvidence": {
@@ -465,20 +493,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/findrisc/calculator.js",
-    "bytes": 5785,
-    "sha256": "f42d4f43ff3eb79c12cb06f979097767a55d7955700a6f19b23048b7510ed87f"
+    "bytes": 5990,
+    "sha256": "5b0438d212625404e4000bd7663d3adafbb5f8f47dd5085889f0290d37ba2ec3"
   },
-  "sourceToolSha256": "d5410b0516821cae51584489c443093f11cbd2a33fc9a75dcb3dff260a801636",
+  "sourceToolSha256": "1f73ab0167c3e10a33dc503aa1c32539f166aebee1bf87eefc5b471d425f8b9a",
   "omittedFullReferenceBanks": [
     {
       "rows": 3,
       "sha256": "53e77c5ff9dc3586c1414151ab97ee498f7e3899d73cdca976db745f5c4d3d17",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 3,
       "sha256": "53e77c5ff9dc3586c1414151ab97ee498f7e3899d73cdca976db745f5c4d3d17",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

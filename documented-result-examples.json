@@ -1,0 +1,657 @@
+{
+  "id": "findrisc",
+  "implementationVersion": "findrisc@native-2026-10-05+5b0438d21262",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco baixo: cerca de 1 em 100 desenvolverá diabetes em 10 anos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco levemente elevado: cerca de 1 em 25 em 10 anos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Orientar alimentação e atividade física.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco moderado: cerca de 1 em 6 em 10 anos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considerar glicemia de jejum ou HbA1c e mudança intensiva do estilo de vida.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco muito alto: cerca de 1 em 2 em 10 anos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Investigar diabetes não diagnosticado.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk: about 1 in 100 will develop diabetes in 10 years",
+            "locale": "en",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Slightly elevated risk: about 1 in 25 in 10 years",
+            "locale": "en",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "Advise diet and physical activity.",
+            "locale": "en",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Moderate risk: about 1 in 6 in 10 years",
+            "locale": "en",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "Consider fasting glucose or HbA1c and intensive lifestyle change.",
+            "locale": "en",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Very high risk: about 1 in 2 in 10 years",
+            "locale": "en",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "Investigate undiagnosed diabetes.",
+            "locale": "en",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo bajo: alrededor de 1 de cada 100 desarrollará diabetes en 10 años",
+            "locale": "es",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo ligeramente elevado: alrededor de 1 de cada 25 en 10 años",
+            "locale": "es",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "Orientar sobre alimentación y actividad física.",
+            "locale": "es",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo moderado: alrededor de 1 de cada 6 en 10 años",
+            "locale": "es",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "Considerar glucemia en ayunas o HbA1c y un cambio intensivo del estilo de vida.",
+            "locale": "es",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo muy alto: alrededor de 1 de cada 2 en 10 años",
+            "locale": "es",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "Investigar diabetes no diagnosticada.",
+            "locale": "es",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque faible : environ 1 personne sur 100 développera un diabète en 10 ans",
+            "locale": "fr",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque légèrement élevé : environ 1 personne sur 25 en 10 ans",
+            "locale": "fr",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "Conseiller une alimentation et une activité physique.",
+            "locale": "fr",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque modéré : environ 1 personne sur 6 en 10 ans",
+            "locale": "fr",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "Envisager une glycémie à jeun ou une HbA1c et une modification intensive du mode de vie.",
+            "locale": "fr",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque très élevé : environ 1 personne sur 2 en 10 ans",
+            "locale": "fr",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "Rechercher un diabète non diagnostiqué.",
+            "locale": "fr",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko: Etwa 1 von 100 wird innerhalb von 10 Jahren Diabetes entwickeln",
+            "locale": "de",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Leicht erhöhtes Risiko: Etwa 1 von 25 innerhalb von 10 Jahren",
+            "locale": "de",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "Zu Ernährung und körperlicher Aktivität anleiten.",
+            "locale": "de",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Mäßiges Risiko: Etwa 1 von 6 innerhalb von 10 Jahren",
+            "locale": "de",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "Nüchternglukose oder HbA1c und eine intensive Lebensstiländerung erwägen.",
+            "locale": "de",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Sehr hohes Risiko: Etwa 1 von 2 innerhalb von 10 Jahren",
+            "locale": "de",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "Nicht diagnostizierten Diabetes abklären.",
+            "locale": "de",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio basso: circa 1 su 100 svilupperà il diabete in 10 anni",
+            "locale": "it",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio leggermente elevato: circa 1 su 25 in 10 anni",
+            "locale": "it",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "Orientare su alimentazione e attività fisica.",
+            "locale": "it",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio moderato: circa 1 su 6 in 10 anni",
+            "locale": "it",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "Considerare glicemia a digiuno o HbA1c e un cambiamento intensivo dello stile di vita.",
+            "locale": "it",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio molto alto: circa 1 su 2 in 10 anni",
+            "locale": "it",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "Indagare il diabete non diagnosticato.",
+            "locale": "it",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر منخفض: نحو 1 من كل 100 سيُصاب بالسكري خلال 10 سنوات",
+            "locale": "ar",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع قليلًا: نحو 1 من كل 25 خلال 10 سنوات",
+            "locale": "ar",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "توجيه بشأن التغذية والنشاط البدني.",
+            "locale": "ar",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر متوسط: نحو 1 من كل 6 خلال 10 سنوات",
+            "locale": "ar",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "النظر في سكر الدم صائمًا أو HbA1c وتغيير مكثف لنمط الحياة.",
+            "locale": "ar",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع جدًا: نحو 1 من كل 2 خلال 10 سنوات",
+            "locale": "ar",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "التحري عن السكري غير المشخّص.",
+            "locale": "ar",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险：约 100 人中有 1 人会在 10 年内患上糖尿病",
+            "locale": "zh",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "风险略高：约 25 人中有 1 人在 10 年内",
+            "locale": "zh",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "指导饮食和身体活动。",
+            "locale": "zh",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等风险：约 6 人中有 1 人在 10 年内",
+            "locale": "zh",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "考虑空腹血糖或 HbA1c 以及强化生活方式改变。",
+            "locale": "zh",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "极高风险：约 2 人中有 1 人在 10 年内",
+            "locale": "zh",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "排查未诊断的糖尿病。",
+            "locale": "zh",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク：10年で100人に約1人が糖尿病を発症します",
+            "locale": "ja",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "やや高いリスク：10年で約25人に1人",
+            "locale": "ja",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "食事と身体活動について指導する。",
+            "locale": "ja",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等度のリスク：10年で約6人に1人",
+            "locale": "ja",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "空腹血糖または HbA1c と集中的な生活習慣の変更を考慮する。",
+            "locale": "ja",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "非常に高いリスク：10年で約2人に1人",
+            "locale": "ja",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "未診断の糖尿病を調べる。",
+            "locale": "ja",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Jovem, IMC normal, ativo: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "कम जोखिम: 10 वर्षों में लगभग 100 में से 1 व्यक्ति को मधुमेह विकसित होगा",
+            "locale": "hi",
+            "template": "documented-authored-3865c2d0bd757b617cea"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "58 anos, IMC 27, cintura 98 (H), sedentário, sem verduras diárias: 10 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "हल्का बढ़ा हुआ जोखिम: 10 वर्षों में लगभग 25 में से 1",
+            "locale": "hi",
+            "template": "documented-authored-60ac02f66f4d1b0d5be8"
+          },
+          "note": {
+            "text": "आहार और शारीरिक गतिविधि के बारे में मार्गदर्शन करें।",
+            "locale": "hi",
+            "template": "documented-authored-2710c53f4150f3247ebe"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "50 anos, IMC 27, cintura 85 (M), sedentária, sem verduras diárias, tio com DM: 12 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम जोखिम: 10 वर्षों में लगभग 6 में से 1",
+            "locale": "hi",
+            "template": "documented-authored-3089b239e5143fd9afe4"
+          },
+          "note": {
+            "text": "उपवास ग्लूकोज़ या HbA1c और तीव्र जीवनशैली परिवर्तन पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-ea1db0a0482c40fd1abf"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Todos os fatores de maior risco: 26 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "बहुत उच्च जोखिम: 10 वर्षों में लगभग 2 में से 1",
+            "locale": "hi",
+            "template": "documented-authored-09ae36d2b4a266723e15"
+          },
+          "note": {
+            "text": "अज्ञात मधुमेह की जाँच करें।",
+            "locale": "hi",
+            "template": "documented-authored-886b616dd0fb635a3c6c"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

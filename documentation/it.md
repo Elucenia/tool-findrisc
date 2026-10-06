@@ -114,3 +114,33 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Rischio basso: circa 1 su 100 svilupperà il diabete in 10 anni
+
+
+### 2
+
+Rischio leggermente elevato: circa 1 su 25 in 10 anni
+
+Orientare su alimentazione e attività fisica.
+
+
+### 3
+
+Rischio moderato: circa 1 su 6 in 10 anni
+
+Considerare glicemia a digiuno o HbA1c e un cambiamento intensivo dello stile di vita.
+
+
+### 4
+
+Rischio molto alto: circa 1 su 2 in 10 anni
+
+Indagare il diabete non diagnosticato.
+

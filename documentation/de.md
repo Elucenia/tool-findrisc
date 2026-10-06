@@ -114,3 +114,33 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges Risiko: Etwa 1 von 100 wird innerhalb von 10 Jahren Diabetes entwickeln
+
+
+### 2
+
+Leicht erhöhtes Risiko: Etwa 1 von 25 innerhalb von 10 Jahren
+
+Zu Ernährung und körperlicher Aktivität anleiten.
+
+
+### 3
+
+Mäßiges Risiko: Etwa 1 von 6 innerhalb von 10 Jahren
+
+Nüchternglukose oder HbA1c und eine intensive Lebensstiländerung erwägen.
+
+
+### 4
+
+Sehr hohes Risiko: Etwa 1 von 2 innerhalb von 10 Jahren
+
+Nicht diagnostizierten Diabetes abklären.
+
